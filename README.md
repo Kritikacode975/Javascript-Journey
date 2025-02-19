@@ -1,7 +1,7 @@
 #📌 JavaScript Journey 🚀<br>
 Welcome to my JavaScript Learning Repository! This repo contains my daily progress as I explore and practice JavaScript concepts.<br>
 
-##📖 Topics Covered <br>
+#📖 Topics Covered <br>
 
 ✅ Variables & Data Types <br>
 ✅ Type Conversion & Operations <br>
