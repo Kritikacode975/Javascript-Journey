@@ -15,8 +15,8 @@ console.log(myArr.indexOf(6));
 console.log(myArr.indexOf(9)); // if the element is not in array it gives the index value (-1)
 
 
-//Using join
-const newArray = myArr.join() // join combine the array with string and gives the output in string format
+//Using join: join combine the array with string and gives the output in string format
+const newArray = myArr.join() 
 console.log(newArray); 
 console.log(typeof newArray); 
 
