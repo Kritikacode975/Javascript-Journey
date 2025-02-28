@@ -1,5 +1,5 @@
 //*********************FUNCTION IN JS**********************
-// Define:A function in JavaScript is a block of reusable code that performs a specific task when called.
+// Define:A function in JavaScript is the block of reusable code that performs a specific task when it called.
 
 // function keyword is used to define function in js
 function sayMyName(){
