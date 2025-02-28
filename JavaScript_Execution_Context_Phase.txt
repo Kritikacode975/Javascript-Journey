@@ -14,7 +14,7 @@ Define Js Execution context/phase:
     [           ]  
 
 Difference between MCP and EP:
-    In memory creation phase there will be space which will allocate to variable, functions or      whatever we declared. There is only one memory allocation phase in memory creation.
+    In memory creation phase there will be space which will allocate to variable, functions whatever we declared. There is only one memory allocation phase in memory creation.
 
     In execution phase we do mathematicl functions like add,sub,mul,div,executes
 
@@ -77,6 +77,6 @@ Note: Whenever new function defines this two phases repeats the execution. The g
     ==>This total value (15) is return to the global execution and this cycle repeats evertym
 
 
-Note:This note is note copied from chatgpt and from any other Gen-Ai this note is personally written by me 😅
+Note:This note is not copied from chatgpt and from any other Gen-Ai this note is personally written by me 😅
 
 
