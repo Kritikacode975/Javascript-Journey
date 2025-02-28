@@ -1,0 +1,82 @@
+Define Js Execution context/phase:
+        Define Js Execution context/phase means how to javascript run and executes the file. Js runs the file in two phase
+        1)Global Execution Context 
+        2)Functional Execution context
+        3)Third is optional (Eval Execution Context): It is the property of global object
+
+=> Js is single threaded.Inside the js everything is braces{}
+
+=> How to Execute code js code (The code runs in two phase)
+
+    [           ]
+    [ { code }  ]===> 1) Memory Creation Phase (MCP)
+    [ { code }  ]===> 2) Execution Phase
+    [           ]  
+
+Difference between MCP and EP:
+    In memory creation phase there will be space which will allocate to variable, functions or      whatever we declared. There is only one memory allocation phase in memory creation.
+
+    In execution phase we do mathematicl functions like add,sub,mul,div,executes
+
+
+=> How to js put values in execution time
+
+    Lets take an example:
+        let val1 = 10
+        let val2 = 5
+
+        function addNum(num1,num2){
+            let total = num1 + num2
+            return total
+        }
+    
+    let result1 = addNum(num1,num2)
+    let result2 = addNum(10,4)
+
+Note: We do step wise execution as per this code 
+
+Step1-Global Execution/Environment:
+    The code first runs in Global execution and the GE allocated into the (this).It is compulsory in js
+
+Step2-Memory Creation Phase:
+    In MCP we collect all the variables inside it.In MCP first step is to put all the variables inside MCP and name them undefined
+
+    -> pointing to the above code which we written
+        val1 = undefined
+        val2 = undefined
+        addNum = defination(code inside the function)
+        result1 = undefined
+        result2 = undefined
+
+    Note:This is the first cycle
+
+Step3-Execution Phase:
+    val1 = 10
+    val2 = 5                           This is the addNum diffrent execution context
+    addNum                             [ New variable ] 
+                                       [ Environment  ]
+                                       [       +      ] ==>New execution context
+                                       [    Execution ] 
+                                       [      Thread  ]
+                                               |
+                                        [Delete after word]
+
+                        ==> This is the new send box so that we repeat again MCP and execution phase
+                        and these two are executed for addNum
+
+                        ==> This new executed context will be delete once its completes the work
+
+Note: Whenever new function defines this two phases repeats the execution. The global execution phase is defines only one time
+
+  ==> repeat the process with MCP and execution phase
+  1) MCP                                               2)execution phase
+    val1 = undefined                                        num1 = 10
+    val2 = undefined                                        num2 = 5
+    total = undefined                                       total = 15
+
+    ==>This total value (15) is return to the global execution and this cycle repeats evertym
+
+
+Note:This note is note copied from chatgpt and from any other Gen-Ai this note is personally written by me 😅
+
+
